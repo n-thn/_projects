@@ -1,0 +1,8 @@
+b = 0
+aplicativos = []
+while(b<10):
+    a = input("digite o nome do aplicativo: ")
+    aplicativos.append(a)
+    b = b+1
+aplicativos_ordenado = sorted(aplicativos)
+print(aplicativos_ordenado)
