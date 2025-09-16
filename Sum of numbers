@@ -1,0 +1,10 @@
+n = input("Enter an integer: ")
+a = sum(int(i) for i in n)
+print ("Sum: ", end = "")
+for i in range(len(n)):
+    b = int(n[i])
+    if ((i+1) == len(n)):
+        print(str(b), end = "")
+    else:
+        print(str(b) + " + ", end = "")
+print(" = " + str(a))
