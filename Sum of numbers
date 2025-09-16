@@ -1,10 +1,23 @@
 n = input("Enter an integer: ")
-a = sum(int(i) for i in n)
+
+a = sum(int(i) for i in n) '''Here the numbers are separated, added and stored 
+in the variable a. Here the numbers are separated, added and stored in the 
+variable a. n, received as an integer, is interpreted as a list'''
+
 print ("Sum: ", end = "")
+
 for i in range(len(n)):
-    b = int(n[i])
-    if ((i+1) == len(n)):
+    b = int(n[i]) '''Here, each number in the list n is stored in the 
+    variable b and then displayed.'''
+    
+    if ((i+1) == len(n)): '''Add 1 to line (i+1) because the counting 
+    term i starts at 0'''
         print(str(b), end = "")
     else:
         print(str(b) + " + ", end = "")
-print(" = " + str(a))
+    '''This "if-else" changes the display of the sum to the user. When the 
+    last number is displayed, it will not have the "+" sign to its right. 
+    Otherwise, all will be shown together with the plus sign.'''
+    
+print(" = " + str(a)) '''finally, an equal sign (=) is displayed, along with 
+the sum previously stored in a'''
