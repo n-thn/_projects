@@ -1,0 +1,13 @@
+number = int(input("Enter an integer: "))
+text_num = str(number)
+number_list_a = list((text_num))
+a = 0
+number_list_b = []
+len(number_list_b) == len(number_list_a)
+for _ in range(len(number_list_a)):
+    a = int(number_list_a[_])
+    number_list_b.append(a)
+b = 0
+for i in range(len(number_list_b)):
+    b = b +number_list_b[i]
+print("Sum result = " + str(b))
