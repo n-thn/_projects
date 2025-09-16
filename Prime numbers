@@ -1,0 +1,12 @@
+number = int(input("Enter an integer: "))
+k = 1
+qunt = 0
+for i in range(number):
+    res = number%k
+    k = k+1
+    if (res == 0):
+        qunt = qunt + 1
+if (qunt == 2):
+    print("The number is prime")
+else:
+    print("The number is not prime")
