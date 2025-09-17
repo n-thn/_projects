@@ -1,0 +1,49 @@
+# Atribuição de variáveis
+M = [['11', '12', '13'],
+['21', '22', '23'],
+['31', '32', '33']]
+a = 0
+b = 0
+li_a = [0,0]
+
+# Impressão da matriz
+for linha in range(3):
+        for coluna in range(3):
+            print(f'{M[linha][coluna]:<{3}}',end=' ')
+            if (coluna == 2):
+                print()
+print()
+
+for i in range(9):
+    if ((i%2)!=0):
+        a = input("Digite a coordenada (ex: 11): ")
+        for i in range(2):
+            li_a[i] = int(a[i])
+        M[li_a[0]][li_a[1]]= "o"
+        
+        for linha in range(3):
+            for coluna in range(3):
+                print(f'{M[linha][coluna]:<{3}}',end=' ')
+                if (coluna == 2):
+                    print()
+        print()
+        
+    else:
+        a = input("Digite a coordenada (ex: 11): ")
+        for i in range(len(a)):
+            li_a[i] = int(a[i])
+        M[li_a[0]][li_a[1]]= "x"
+        
+        for linha in range(3):
+            for coluna in range(3):
+                print(f'{M[linha][coluna]:<{3}}',end=' ')
+                if (coluna == 2):
+                    print()
+        print()
+
+for linha in range(3):
+    for coluna in range(3):
+        print(f'{M[linha][coluna]:<{3}}',end=' ')
+        if (coluna == 2):
+            print()
+print()
